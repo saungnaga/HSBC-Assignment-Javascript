@@ -12,19 +12,19 @@ let animalFound = 0;
 let firstClick = true;
 
 function getAnimals() {
-    // Generate a random index within the range of the array length
+    // bikin random index
     const random = Math.floor(Math.random() * animals.length);
-    // Get the item at the random index
+    // ambil item dari random index
     const randomAnimals = animals[random];
-    // Show the random item in an alert
+    // alert random animal
     Swal.fire("Your Spirit Animal is " + randomAnimals);
-    // get animal details
+    // animal details di html
     let animalDetailsDiv = document.getElementById("animalDetails");
     animalDetailsDiv.textContent = animalDetails[randomAnimals]
-    //animal counter
+    // animal counter
     animalFound++;
     let animalCounter = document.getElementById("animalCounter")
-    
+    // penjelasan animal counter di html
     if (firstClick) {
         animalCounter.textContent = "okay, your animal is " + randomAnimals + ", you should take it for the rest of your life!";
         firstClick = false;
