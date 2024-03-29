@@ -17,7 +17,7 @@ function getAnimals() {
     // Get the item at the random index
     const randomAnimals = animals[random];
     // Show the random item in an alert
-    Swal.fire("Your Lucky Animal is " + randomAnimals);
+    Swal.fire("Your Spirit Animal is " + randomAnimals);
     // get animal details
     let animalDetailsDiv = document.getElementById("animalDetails");
     animalDetailsDiv.textContent = animalDetails[randomAnimals]
@@ -29,6 +29,6 @@ function getAnimals() {
         animalCounter.textContent = "okay, your animal is " + randomAnimals + ", you should take it for the rest of your life!";
         firstClick = false;
     } else {
-        animalCounter.textContent = "seems you don't like your first soulmate 😔 you've change your soul animal for " + (animalFound-1) + " time(s)"
+        animalCounter.textContent = "seems you don't like your first soulmate 😔 you've change your spirit animal for " + (animalFound-1) + " time(s)"
     }
 }
